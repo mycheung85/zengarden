@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
+* {
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
 header {
     height: 230px;
     padding: 20px 0 70px 0;
@@ -14,7 +22,8 @@ header {
 body {
     color: #325050;
     background: #ffffff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Libre Baskerville';
+    font-size: 
 }
 
 h1 {
@@ -64,7 +73,7 @@ p {
     margin: 40px;;
     line-height: 2;
     display: block;
-    margin-block-start: 1em;
+    margin-block-start: 2em;
     
 }
 
@@ -80,16 +89,7 @@ div {
     display: block;
 }
 
-div.participation {
-    padding: 3em 0;
-    margin-top: 3em;
 
-}
-
-div.benefits {
-    padding-bottom: 3em;
-    margin-bottom: 3em;
-}
 
 div.participation, div.benefits {
     background-attachment: scroll, scroll, fixed;
@@ -97,15 +97,12 @@ div.participation, div.benefits {
     background-image: url(../images/bamboo.png);
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
+    padding: 10px;
 }
 
 .summary {
     width: 80%;
     padding-top: 2em;
-}
-
-.sidebar {
-    background: #edf4f0;  
 }
 
 footer {
@@ -119,9 +116,55 @@ footer {
 footer a {
     display: inline-block;
     overflow: hidden;
+    position: relative;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 45px;
+    text-indent: 0;
+    font-family: 'verdemoderna';
+    speak: none;
+    font-weight: normal;
     width: 40px;
     height: 40px 0 0 0;
     padding: 40px;
     position: relative;
     color: white;
+}
+
+footer a:visited {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+a:hover {
+    background-color: antiquewhite;
+}
+
+a:visited {
+    color: #1a5952;
+}
+
+.sidebar {
+    background: #edf4f0;  
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.design-selection li, .zen-resources li {
+    float: left;
+    width: 50%;
+    padding: 1.5em;
+    border-top: solid 1px #d9e3dc;
+    color: #c0cac3;
+    font-style: italic;
+}
+
+.zen-resources {
+    overflow: hidden;
+    background-color: rgba(128, 188, 159, 0.5);
+    background-image: url(../images/bamboo.png);
 }
